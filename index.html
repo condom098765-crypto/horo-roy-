@@ -8,57 +8,51 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;font-family:'JetBrains Mono',monospace}
 body{background:#020202;color:#00ff41}
-.top{border-bottom:1px solid #00ff41;background:#000;color:#00ff41;padding:6px 10px;display:flex;justify-content:space-between;font-size:10px}
-.banner{height:160px;background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.85)),url('campus1.jpg');background-size:cover;background-position:center;border-bottom:2px solid #00ff41;display:flex;align-items:center;padding:20px;position:relative}
-.banner::after{content:'[SYSTEM: DPI_SECURE]';position:absolute;top:10px;right:15px;color:#00ff41;font-size:9px;border:1px solid #00ff41;padding:2px 6px}
-.banner h1{font-size:22px;color:#00ff41;text-shadow:0 0 10px #00ff41}
-.banner h1 small{display:block;font-size:11px;color:#ddd;margin-top:5px}
-.menu{background:#000;border-bottom:1px solid #00ff41;display:flex;gap:15px;padding:10px 15px;font-size:11px;overflow-x:auto}
+.top{border-bottom:1px solid #00ff41;background:#000;padding:6px 10px;display:flex;justify-content:space-between;font-size:9px}
+.banner{height:160px;background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url('campus1.jpg');background-size:cover;background-position:center;border-bottom:2px solid #00ff41;display:flex;align-items:center;padding:15px}
+.banner h1{font-size:20px;color:#00ff41;text-shadow:0 0 10px #00ff41}
+.banner h1 small{display:block;font-size:11px;color:#fff;margin-top:5px}
+.menu{background:#000;border-bottom:1px solid #00ff41;display:flex;gap:12px;padding:10px 12px;font-size:11px;overflow-x:auto}
 .menu a{color:#00ff41;text-decoration:none;white-space:nowrap}
-.container{max-width:1100px;margin:auto;padding:12px;display:grid;grid-template-columns:1fr;gap:12px}
+.container{max-width:1100px;margin:auto;padding:10px;display:grid;grid-template-columns:1fr;gap:10px}
 @media(min-width:800px){.container{grid-template-columns:2.2fr 0.9fr}}
-.card{background:#0a0a0a;border:1px solid #00ff41;border-radius:4px;overflow:hidden;margin-bottom:12px;box-shadow:0 0 15px rgba(0,255,65,0.15)}
+.card{background:#0a0a0a;border:1px solid #00ff41;border-radius:4px;overflow:hidden;margin-bottom:10px}
 .head{padding:10px 15px;font-weight:700;font-size:11px;border-bottom:1px solid #00ff41;background:#000;color:#00ff41}
 .form{padding:15px}
-.label{font-size:10px;color:#00ff41;margin:10px 0 4px;display:block;opacity:0.8}
+.label{font-size:9px;color:#00ff41;margin:10px 0 4px;display:block}
 .input{width:100%;padding:9px 10px;border:1px solid #00ff41;background:#000;color:#00ff41;border-radius:3px;font-size:11px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-/* PIC FIX - PUROTA DEKHA JABE */
-.profile{padding:0;background:#000}
-.profile img{width:100%;height:auto;max-height:500px;object-fit:contain;display:block;background:#000}
-.profile-info{padding:12px;text-align:center}
-.profile-info h3{color:#00ff41;text-shadow:0 0 5px #00ff41;font-size:14px}
+/* FIXED PIC - SOB FULL DEKHA JABE */
+.profile img, .campus-box img{width:100%;height:auto;display:block;background:#000}
+.campus-box{display:flex;flex-direction:column;gap:5px;padding:5px;background:#000}
+.campus-box img{border:1px solid #00ff41;border-radius:3px}
+.profile-info{padding:10px;text-align:center}
+.profile-info h3{color:#00ff41;font-size:14px}
 .profile-info p{font-size:10px;color:#888}
-.campus-box{display:grid;grid-template-columns:1fr 1fr;gap:3px;padding:3px;background:#000}
-.campus-box img{width:100%;height:auto;max-height:400px;object-fit:contain;background:#000;border:1px solid #111;display:block}
-.footer{background:#000;border-top:1px solid #00ff41;color:#00ff41;text-align:center;padding:20px;font-size:10px}
-.footer b{font-size:14px;text-shadow:0 0 10px #00ff41}
+.footer{background:#000;border-top:1px solid #00ff41;text-align:center;padding:20px;font-size:10px}
+.footer b{font-size:14px}
 </style>
 </head>
 <body>
 <div class="top"><span>root@dpi:~# ./dpi.gov.bd</span><span>ACCESS: GRANTED</span></div>
-<div class="banner"><h1>Dinajpur Polytechnic Institute<br><small>>_ 3rd Semester | Lovely Friendship | System Breached</small></h1></div>
-<div class="menu"><a href="#">> HOME</a><a href="#">> NOTICE</a><a href="#">> GALLERY</a><a href="#">> FRIENDS</a><a href="#">> CONTACT</a></div>
+<div class="banner"><h1>Dinajpur Polytechnic Institute<br><small>>_ 3rd Semester | Lovely Friendship</small></h1></div>
+<div class="menu"><a href="#">> HOME</a><a href="#">> NOTICE</a><a href="#">> GALLERY</a><a href="#">> FRIENDS</a></div>
 <div class="container">
 <div>
 <div class="card"><div class="head">> STUDENT_INFORMATION_FORM.exe</div><div class="form">
 <label class="label">> FULL_NAME</label><input class="input" value="Horo Roy - HP ROY DADA" readonly>
-<div class="grid2"><div><label class="label">> INSTITUTE</label><input class="input" value="Dinajpur Polytechnic Institute" readonly></div><div><label class="label">> SEMESTER</label><input class="input" value="3rd Semester" readonly></div></div>
-<div class="grid2"><div><label class="label">> I_AM</label><input class="input" value="HP ROY DADA" readonly></div><div><label class="label">> DEPARTMENT</label><input class="input" value="Computer Technology" readonly></div></div>
-<label class="label">> I_DO</label><input class="input" value="Web Development & Bug Bounty Hunter & Cyber Security" readonly>
-<label class="label">> I_LOVE</label><input class="input" value="Coding, Music, Learning New Things" readonly>
+<div class="grid2"><div><label class="label">> INSTITUTE</label><input class="input" value="Dinajpur Polytechnic" readonly></div><div><label class="label">> SEMESTER</label><input class="input" value="3rd Semester" readonly></div></div>
 <label class="label">> BEST_FRIEND</label><input class="input" value="Plabon Roy - Lovely Friendship" readonly>
 <label class="label">> HAPPINESS ❤️</label><input class="input" value="pu..j..a - My Happiness" readonly>
 <label class="label">> DREAM</label><input class="input" value="I want to be expert of cyber security as HORO 369 HP" readonly>
 </div></div>
-<div class="card"><div class="head">> CAMPUS_GALLERY /root/dpi/ - FULL VIEW MODE</div><div class="campus-box"><img src="campus1.jpg"><img src="campus2.jpg"></div></div>
+<div class="card"><div class="head">> CAMPUS_GALLERY /root/dpi/ - FULL VIEW (1 BY 1)</div><div class="campus-box"><img src="campus1.jpg"><img src="campus2.jpg"></div></div>
 </div>
 <div>
-<div class="card"><div class="head">> USER: HORO_ROY</div><div class="profile"><img src="horo.jpg"><div class="profile-info"><h3>HP ROY DADA</h3><p>ROOT ACCESS<br>3rd Semester - DPI</p></div></div></div>
-<div class="card"><div class="head">> USER: FRIEND</div><div class="profile"><img src="friend.jpg"><div class="profile-info"><h3>PLABON ROY</h3><p>BEST FRIEND<br>Lovely Friendship</p></div></div></div>
-<div class="card"><div class="head">> NOTICE_BOARD.log</div><div style="padding:12px;font-size:11px;line-height:1.8">> Lovely Friendship Day [TODAY]<br>> Happiness: pu..j..a ❤️ [ACTIVE]<br>> System: HACKED BY HP ROY DADA</div></div>
+<div class="card"><div class="head">> USER: HORO_ROY - FULL PIC</div><div class="profile"><img src="horo.jpg"><div class="profile-info"><h3>HP ROY DADA</h3><p>ROOT ACCESS - 3rd Semester</p></div></div></div>
+<div class="card"><div class="head">> USER: FRIEND - FULL PIC</div><div class="profile"><img src="friend.jpg"><div class="profile-info"><h3>PLABON ROY</h3><p>BEST FRIEND</p></div></div></div>
 </div>
 </div>
-<div class="footer"><b>Make By HP ROY DADA</b><br><br>[ Dinajpur Polytechnic Institute | Computer Technology | 3rd Semester ]<br><br><span style="color:#888">HAPPINESS = pu..j..a ❤️ | BEST FRIEND = Plabon Roy</span><br><br>© 2026 | HACKED WITH ❤️ | HORO 369 HP</div>
+<div class="footer"><b>Make By HP ROY DADA</b><br><br>© 2026 | Dinajpur Polytechnic | Lovely Friendship</div>
 </body>
 </html>
