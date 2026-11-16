@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HORO ROY HP 369</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;500&display=swap');
+  body{
+    margin:0; background:#f6f1e7; font-family:'Poppins',sans-serif;
+    display:flex; justify-content:center; padding:20px;
+  }
+  .paper{
+    background:rgb(33, 116, 7); width:100%; max-width:800px; 
+    padding:40px; box-shadow:0 10px 30px rgba(27, 14, 207, 0.15);
+    transform:rotate(-0.5deg); position:relative;
+    border-radius:2px;
+  }
+  .paper::before{
+    content:''; position:absolute; left:0; top:0; bottom:0; width:40px;
+    border-right:2px solid #ff8a8a; background: #131212e8;
+  }
+  h1{
+    font-family:'Caveat',cursive; font-size:48px; margin-left:50px;
+    line-height:1.2;
+  }
+  h1 span{ display:block; }
+  .small{ font-size:32px; color:#ebdcdf; }
+  .name{ color:#d63031; font-size:60px; }
+  .about-section{ margin-left:60px; margin-top:40px; }
+  .line{
+    border-bottom:2px solid #3f0541; height:40px; margin:15px 0;
+    display:flex; align-items:end; padding-bottom:5px;
+    font-size:18px; transition:0.3s;
+  }
+  .line:hover{ background:#7a7756; transform:scale(1.02); }
+  .label{ font-weight:bold; margin-right:10px; color:#aff5a9; }
+  .btn{
+    margin-left:60px; margin-top:30px; padding:12px 25px;
+    background:#c90a53; color:white; border:none; cursor:pointer;
+    font-size:16px; border-radius:30px; transition:0.3s;
+  }
+  .btn:hover{ background:#d63031; transform:translateY(-3px); }
+</style>
+</head>
+<body>
+
+<div class="paper">
+  <h1>
+    <span class="small">Hlow Friend</span>
+    <span class="small">my name is</span>
+    <span class="name">Horo Roy</span>
+    <span class="small">about me!</span>
+  </h1>
+
+  <div class="about-section">
+    <div class="line"><span class="label">I am:</span>HP ROY DADA</div>
+    <div class="line"><span class="label"> I do:</span> Web Development & Bug Bounty</div>
+    <div class="line"><span class="label">I love:</span> Coding, Music & Learning New Things</div>
+    <div class="line"><span class="label">Dream:</span> I want be expart of saiber site . as HORO 369 HP</div>
+     <div class="line"><span class="label">best friend:</span> plabon roy</div>
+       <div class="line"><span class="label">my happynes:</span>pu..j..a</div>
+  </div>
+
+  <button class="btn" onclick="sayHi()">Say Hlow 👋</button>
+</div>
+
+<script>
+  // Typing Animation
+  const text = "A Student, A Future Developer...";
+  let i=0;
+  function typing(){
+    if(i < text.length){
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing, 70);
+    }
+  }
+  typing();
+
+  function sayHi(){
+    alert(" http://www.facebook.com/puja.roy.285166");
+  }
+</script>
+
+</body>
+</html>
